@@ -17,10 +17,16 @@ repositories {
         name = 'sonatype'
         url = 'https://oss.sonatype.org/content/groups/public/'
     }
+
+    maven {
+        name = 'essentialsx'
+        url = 'https://repo.essentialsx.net/snapshots/'
+    }
 }
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly 'net.essentialsx:EssentialsX:2.19.1-SNAPSHOT'
 }
 
 def targetJavaVersion = 8
