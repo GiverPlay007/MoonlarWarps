@@ -1,0 +1,8 @@
+name: MoonlarWarps
+version: '${version}'
+main: net.moonlar.warps.MoonlarWarps
+api-version: 1.16
+softdepend: [ Essentials ]
+authors: [ GiverPlay ]
+description: Warps com menus
+website: https://moonlar.net
