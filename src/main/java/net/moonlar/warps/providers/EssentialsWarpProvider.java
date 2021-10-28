@@ -1,9 +1,10 @@
-package net.moonlar.warps;
+package net.moonlar.warps.providers;
 
 import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.Warps;
 import com.earth2me.essentials.commands.WarpNotFoundException;
 import net.ess3.api.InvalidWorldException;
+import net.moonlar.warps.WarpProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
