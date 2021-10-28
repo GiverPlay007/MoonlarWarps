@@ -8,9 +8,11 @@ public interface WarpProvider {
 
   Location getWarp(String warpName);
 
-  void setWarp(String warpName, Location location);
+  boolean setWarp(String warpName, Location location);
 
-  void deleteWarp(String warpName);
+  boolean deleteWarp(String warpName);
 
-  List<Location> listWarps();
+  boolean warpExists(String warpName);
+
+  List<String> listWarps();
 }
