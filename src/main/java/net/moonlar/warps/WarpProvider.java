@@ -1,6 +1,5 @@
 package net.moonlar.warps;
 
-import com.earth2me.essentials.Warps;
 import org.bukkit.Location;
 
 import java.util.List;
@@ -9,7 +8,7 @@ public interface WarpProvider {
 
   Location getWarp(String warpName);
 
-  void setWarp(String warpName, String location);
+  void setWarp(String warpName, Location location);
 
   void deleteWarp(String warpName);
 
