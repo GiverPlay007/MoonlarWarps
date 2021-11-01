@@ -1,5 +1,6 @@
 package net.moonlar.warps;
 
+import net.moonlar.warps.commands.WarpCommand;
 import net.moonlar.warps.providers.EssentialsWarpProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +19,8 @@ public final class MoonlarWarps extends JavaPlugin {
     }
 
     getLogger().fine("Using Essentials as warp provider");
+
+    getCommand("warp").setExecutor(new WarpCommand(this));
   }
 
   @Override

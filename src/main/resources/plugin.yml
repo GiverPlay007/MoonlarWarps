@@ -6,3 +6,7 @@ softdepend: [ Essentials ]
 authors: [ GiverPlay ]
 description: Warps com menus
 website: https://moonlar.net
+commands:
+  warp:
+    description: Warp command
+    aliases: [warps]
