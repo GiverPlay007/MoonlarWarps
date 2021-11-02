@@ -1,6 +1,7 @@
 package net.moonlar.warps;
 
 import net.moonlar.warps.commands.WarpCommand;
+import net.moonlar.warps.listeners.MenuListener;
 import net.moonlar.warps.providers.EssentialsWarpProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -35,7 +36,10 @@ public final class MoonlarWarps extends JavaPlugin {
     }
 
     getLogger().fine("Using Essentials as warp provider");
+
     getCommand("warp").setExecutor(new WarpCommand(this));
+    getServer().getPluginManager().registerEvents(new MenuListener(this), this);
+
     reload();
   }
 
