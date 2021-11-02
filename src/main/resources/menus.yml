@@ -1,0 +1,17 @@
+Warps:
+  Size: 27
+  Title: '&lWarps'
+  WarpIcons:
+    spawn:
+      Slot: 13
+      Material: BEACON
+      Title: '&bSpawn'
+      Lore:
+        - '&bTeleportar até o spawn'
+    terrenos:
+      Slot: 15
+      Material: BRICKS
+      Title: '&aTerrenos'
+      Lore:
+        - '&eMundo dos terrenos'
+        - '&aClique para teleportar'

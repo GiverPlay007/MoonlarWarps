@@ -1,7 +1,6 @@
 package net.moonlar.warps.commands;
 
 import net.moonlar.warps.MoonlarWarps;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -9,7 +8,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerTeleportEvent;
-import org.bukkit.inventory.Inventory;
 
 public class WarpCommand implements CommandExecutor {
 
@@ -29,8 +27,7 @@ public class WarpCommand implements CommandExecutor {
     Player player = (Player) sender;
 
     if(args.length == 0) {
-      Inventory inventory = Bukkit.createInventory(null, 27, ChatColor.BOLD + "Warps");
-      player.openInventory(inventory);
+      player.openInventory(plugin.getWarpsInventory());
       return true;
     }
 
