@@ -22,11 +22,16 @@ repositories {
         name = 'essentialsx'
         url = 'https://repo.essentialsx.net/snapshots/'
     }
+
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
     compileOnly 'net.essentialsx:EssentialsX:2.19.1-SNAPSHOT'
+    implementation name: 'inventory-menu-lib'
 }
 
 def targetJavaVersion = 8
